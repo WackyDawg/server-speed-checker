@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Mine ⛏️💎</title>
+    <style>
+        body {
+            background-image: url("./Watch-dogs2-dedsec.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centered-text">
+        <h1>This is centered text</h1>
+        <p>This is some centered paragraph text.</p>
+    </div>
+
+    <audio id="myAudio" autoplay>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="./M83 _Midnight City.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+
+        var playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(function() {
+            }).catch(function(error) {
+                console.log("Autoplay prevented: ", error);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
